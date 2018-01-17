@@ -1,5 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
+# https://github.com/geravm
+# https://github.com/poncho128
 import numpy
 
 col = 0
