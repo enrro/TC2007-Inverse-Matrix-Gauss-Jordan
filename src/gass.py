@@ -3,7 +3,7 @@ from numpy.linalg import inv
 
 with open('data.txt') as f:
     lines = (line for line in f if not line.startswith('#'))
-    MO = np.loadtxt(lines, dtype='i', delimiter=',', skiprows=1)
+    MO = np.loadtxt(lines, delimiter=',', skiprows=1)
 print("The objective matrix is \n", MO, "\n shape ", np.shape(MO), "\n")
 int1 = np.shape(MO)
 
