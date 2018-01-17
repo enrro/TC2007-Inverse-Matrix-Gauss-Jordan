@@ -5,11 +5,11 @@
 import numpy
 
 col = 0
-size = 3
 
 with open('wololo.txt') as f:
     wololo = (line for line in f if not line.startswith('#'))
-    matrix = numpy.loadtxt(wololo, dtype='float', delimiter=',', skiprows=1)
+    size = int(f.readline())
+    matrix = numpy.loadtxt(wololo, dtype='float', delimiter=',')
 
     int1 = numpy.shape(matrix)
 
